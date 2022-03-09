@@ -1,4 +1,4 @@
-require './reverse'
+require './solver'
 
 describe Solver do
   context 'When testing the Solver class' do
