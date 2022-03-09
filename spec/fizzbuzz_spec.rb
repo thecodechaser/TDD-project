@@ -6,7 +6,7 @@ describe Solver do
 
     it 'the method fizzbuzz should return "fizz"' do
       value = 3
-      10.times do |i|
+      10.times do |_i|
         if value % 5 != 0
           result = solver.fizzbuzz(value)
           expect(result).to eq 'fizz'
@@ -17,7 +17,7 @@ describe Solver do
 
     it 'the method fizzbuzz should return "buzz"' do
       value = 5
-      10.times do |i|
+      10.times do |_i|
         if value % 3 != 0
           result = solver.fizzbuzz(value)
           expect(result).to eq 'buzz'
@@ -28,7 +28,7 @@ describe Solver do
 
     it 'the method fizzbuzz should return "fizzbuzz"' do
       value = 15
-      10.times do |i|
+      10.times do |_i|
         result = solver.fizzbuzz(value)
         expect(result).to eq 'fizzbuzz'
         value += 15

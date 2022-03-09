@@ -1,23 +1,21 @@
 class Solver
-  def fizzbuzz(n)
-    if n % 15 == 0
+  def fizzbuzz(number)
+    if (number % 15).zero?
       'fizzbuzz'
-    elsif n % 3 == 0
+    elsif (number % 3).zero?
       'fizz'
-    elsif n % 5 == 0
+    elsif (number % 5).zero?
       'buzz'
     else
-      n.to_s
+      number.to_s
     end
   end
 
-  def factorial(n)
-    if n < 0
-      raise 'Cannot find a factorial for a negative number'
-    elsif n == 0
-      return 1
-    end
-    n * factorial(n-1)
+  def factorial(number)
+    raise 'Cannot find a factorial for a negative number' if number.negative?
+    return 1 if number.zero?
+
+    number * factorial(number - 1)
   end
 
   def reverse(str)
