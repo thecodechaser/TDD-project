@@ -10,4 +10,13 @@ class Solver
       n.to_s
     end
   end
+
+  def factorial(n)
+    if n < 0
+      raise 'Cannot find a factorial for a negative number'
+    elsif n == 0
+      return 1
+    end
+    n * factorial(n-1)
+  end
 end
